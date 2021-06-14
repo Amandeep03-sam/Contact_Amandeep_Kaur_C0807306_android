@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddPersonActivity">
+
+    <EditText
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search Person"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/editSearch"
+        ></EditText>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/recyclerPerson"
+            ></androidx.recyclerview.widget.RecyclerView>
+
+
+        <ImageButton
+
+            android:layout_gravity="bottom"
+            android:layout_marginHorizontal="350dp"
+            android:layout_marginBottom="20dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/add_person"
+            android:src="@drawable/ic_action_add"
+            android:background="@drawable/roundedcorner">
+
+
+        </ImageButton>
+
+        <TextView
+            android:layout_width="50dp"
+            android:id="@+id/countPerson"
+            android:textColor="@android:color/background_light"
+            android:text="1"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:background="@drawable/roundedcorner"
+            android:layout_gravity="bottom|left"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="20dp"
+            ></TextView>
+    </FrameLayout>
+</LinearLayout>
